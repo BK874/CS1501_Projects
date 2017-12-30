@@ -1,0 +1,16 @@
+Homework 4
+
+Brief Story: Jenn has a cookie factory. She can produce cookies according to the following types of orders:
+
+(a) 150 chocolate chip cookies for $50 in 2 hours
+(b) 250 peanut butter cookies for $100 in 3 hours
+(c) 200 snickerdoodle cookies for $50 in 6 hours
+(d) 200 oatmeal raisin cookies for $120 in 1 hour
+
+She is rushing to produce as many cookies as possible before the holidays. She has a $1,000 budget and only 30 hours. How many cookies can she produce while staying within the cost limit and the time limit?
+
+This problem is a form of the two dimensional knapsack problem. Apply a variation of the dynamic programming algorithm covered in class to solve Jenn's cookie problem in at most costLimit * timeLimit * numberOfCookieTypes time.
+
+Problem 1 (30 points): In KnapsackSolver.java, fill in the buildTable method. This method will take in a list of possible orders, a costLimit, and a timeLimit. It will fill in the table at each (i, j) with the maximum number of cookies that can be produced with cost at most i and in time at most j.
+
+Problem 2 (20 points): In KnapsackSolver.java, fill in the solve method. This method will take in a list of possible orders, a costLimit, and a timeLimit. It will calculate the combination of Cookie orders that produces the maximum number of cookies while staying within the costLimit and timeLimit.

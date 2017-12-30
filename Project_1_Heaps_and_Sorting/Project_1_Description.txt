@@ -1,0 +1,9 @@
+Homework 1
+
+Background: In the course repository, you will find a data file "words.csv". This file contains a list of 10,000 words with their associated frequency. In this assignment, you will write multiple algorithms for determining the top 500 most frequent words in order from most frequent to least frequent.
+
+Problem 1 (10 points): In Selector.java, fill in the method select. Select will take in an array of size n and in O(n*k) time return an array with the k largest elements ordered from largest to smallest.
+
+Problem 2 (25 points): In Heap.java, fill in the method buildHeap. BuildHeap will take in an array of size n and in O(n) time, build the complete binary heap containing these n elements.
+
+Problem 3 (15 points): In Heap.java, fill in the method removeMax. RemoveMax will in O(log(n)) time, remove the root element, restore the heap structure, and finally return the removed root element.

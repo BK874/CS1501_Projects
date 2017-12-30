@@ -1,0 +1,11 @@
+Homework 2
+
+Brief Story: A study was conducted on how humans read from books. The study concluded that humans don't read every single character on the page. Rather, humans tend to only read the first and last letters of each word.
+
+As computer scientists, we consider and question the study's results. We decide to devise a hash function that only considers the first two letters and the last letter of each word. Then, we measure how effective this hash function is in practice.
+
+Overview: In the course repository, you will find a data file "words.csv". This file contains a list of 10,000 words with their associated frequency. For the first part of this assignment, we implement a HashMap with LinkedList Chaining (as described in class) so that we can associate each word with its corresponding frequency. For the second part of this assignment, we devise basic tests to evaluate the effectiveness of our hash function.
+
+Problem 1 (36 points): In ChainingHashMap.java, fill in the get, put, and remove methods as specified in the comments.
+
+Problem 2 (14 points): In Main.java, fill in the collisionTest and sparsityTest methods as specified in the comments.

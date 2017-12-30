@@ -1,0 +1,14 @@
+Homework 3
+
+Brief Story: Mark is planning a vacation on a budget. He has set aside $650 for travel costs. Before selecting his final destination, he needs to set out all possible destinations that he can reach without going over budget.
+
+Details: A weighted graph will be given that represents locations and direct connections between locations. Each location will be represented by a vertex and each direct connection will be represented by a weighted edge where the weight represents the price including both departure and return trips.
+
+The weighted graph will be stored as a WeightedGraph object which contains an adjacency list. The expected output is a set of locations having type Set<Location>.
+
+Problems: First, you will implement a Breadth First Search (BFS) to determine all possible destinations that could be reached ignoring the budget. Second, you will implement a form of Dijkstra's algorithm to build a Shortest Path Tree (SPT) and then determine all possible destinations that can be reached while staying under budget.
+
+Problem 1 (20 points): In BFS.java, fill in the getReachableSet method. This method will take in a WeightedGraph along with a start Location. It will apply Breadth First Search to compute the set of all reachable locations from the starting location.
+
+Problem 2 (30 points): In Dijkstra.java, fill in the getDestinationSet method. This method will take in a WeightedGraph along with a start Location and a budget. It will apply Dijkstra's algorithm to compute the set of all possible destinations that could be reached from the starting location while staying within the budget.
+

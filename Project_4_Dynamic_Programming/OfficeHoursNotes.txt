@@ -1,0 +1,41 @@
+Professor Office Hours:
+Two Parts:
+    1. Build the table
+    2. Build the multiset based on the table
+
+
+    1. Table is: 0 1 2  ... budget in time
+       	     	 0
+		 1
+		 2		x
+		 .
+		 .
+		 .		
+    budget dollars			x
+
+-row i dollars
+-col j time
+-The i, j cell represents the most cookies that you can make with i dollars in j hours
+-Fill in the table row by row
+-When filing in the cell at row i and col j, we consider each possible item and look
+-at the cell at row i-item.cost and col j-item.time
+-Pick the one that maximizes table[i-item.cost][j-item.time] + item.numberOfCookies
+
+      2. Recursive. Starting from table[costLimit][timeLimit], check if
+      table[i-item.cost][j-item.time] == [costLimit][timeLimit] - item.numberOfCookies
+      Throw out any results that go out of bounds of array. Return when table[i][j]=0
+      Use multiset. Write recursive method where you pass in multiset, indices, and
+      table(?) Each time you find an "ideal" order (see above check) you add it to the
+      multiset
+
+TA Office Hours:
+   2. Backtrack but not recursively. When building the table in problem 1 also build
+   the a "order table" that stores the order added at that location. Then, to fill the
+   multiset of orders in problem 2, backtrack through the order table starting at the
+   max (orderTable[costLimit][timeLimit]) by adding the order stored at that location
+   to the multiset and then subtracting the cost and time of that order from the
+   current location's indices. Repeat at the new location until the current location
+   is null.
+  
+   
+
